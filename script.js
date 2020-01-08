@@ -10,8 +10,7 @@ function tenAlphabetOnly(e){
 
     if((e.match(letters)) && (e.length <= 10))
     {
-        alert('Your name have accepted : you can try another');
-        return true;
+        return e;
     }
     else
     {
@@ -26,6 +25,11 @@ function tenNumericOnly(e){
     if(!e.match(numbers) || (e.length >10 )){
    
         alert("Please only enter numeric characters! (Allowed input:0-9) Maximum digits = 10 .");
+        return false;
+    }
+    else
+    {
+        return e;
     }
 }
 
