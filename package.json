@@ -1,0 +1,29 @@
+{
+    "name": "testing_input_field",
+    "version": "1.0.0",
+    "description": "",
+    "main": ".#script.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha",
+        "test:browser": "live-server --port=9000 --mount=/:public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ich-Mael/Testing_input_field.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ich-Mael/Testing_input_field/issues"
+    },
+    "homepage": "https://github.com/Ich-Mael/Testing_input_field#readme",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^7.0.0",
+        "open": "^7.0.0"
+    }
+}
