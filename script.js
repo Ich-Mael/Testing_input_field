@@ -8,7 +8,7 @@ const submit_2 = document.querySelector(".submit-2");
 function tenAlphabetOnly(e){
     var letters = /^[A-Za-z]+$/;
 
-    if((e.value.match(letters)) && (e.value.length <= 10))
+    if((e.match(letters)) && (e.length <= 10))
     {
         alert('Your name have accepted : you can try another');
         return true;
@@ -23,7 +23,7 @@ function tenAlphabetOnly(e){
 function tenNumericOnly(e){
     var numbers = /^\d+/  ;
 
-    if(!e.value.match(numbers) || (e.value.length >10 )){
+    if(!e.match(numbers) || (e.length >10 )){
    
         alert("Please only enter numeric characters! (Allowed input:0-9) Maximum digits = 10 .");
     }
@@ -31,10 +31,10 @@ function tenNumericOnly(e){
 
 
 submit_1.addEventListener("click", ()=>{
-    tenNumericOnly(input_1);
+    tenNumericOnly(input_1.value);
 });
 
 submit_2.addEventListener("click", ()=>{
-    tenAlphabetOnly(input_2); 
+    tenAlphabetOnly(input_2.value); 
 
 });
