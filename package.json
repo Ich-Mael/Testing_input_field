@@ -23,7 +23,7 @@
     "homepage": "https://github.com/Ich-Mael/Testing_input_field#readme",
     "devDependencies": {
         "chai": "^4.2.0",
-        "mocha": "^7.0.0",
+        "mocha": "^10.2.0",
         "open": "^7.0.0"
     }
 }
